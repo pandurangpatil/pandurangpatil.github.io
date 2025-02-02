@@ -1,0 +1,18 @@
+# Hugo build artifacts
+/public/
+/resources/
+.hugo_build.lock
+
+# Cache and dependencies
+/node_modules/
+/tmp/
+.DS_Store
+Thumbs.db
+
+# Hugo configuration and generated files
+.hugo_build.lock
+hugo_stats.json
+
+# GitHub Pages related files (if deploying manually)
+.deploy/
+
