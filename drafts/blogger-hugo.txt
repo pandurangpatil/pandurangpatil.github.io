@@ -1,0 +1,35 @@
+
+First of all I tried this site to convert blogger site content to hugo or markdown format
+
+git clone git@github.com:palaniraja/blog2md.git
+
+I followed the insructions 
+
+1. downloaded the blogger export xml file
+2. installed prerequisites to run blog2md
+3. as per instruction invoked this tool to migrate blogger.com posts to markdown - node index.js b|w /media/pandurang/Primary-Data/ubuntu-local-setup-jan-25/projects/temp/blog-02-08-2025.xml /media/pandurang/Primary-Data/ubuntu-local-setup-jan-25/projects/temp/pandurangpatil
+
+
+However it didn't workout. 
+
+I got another tool from the hugo site
+
+https://gohugo.io/tools/migrations/
+
+blogger-to-hugo
+
+I followed the link to https://pypi.org/project/blogger-to-hugo/#description
+
+Did the installation with following steps
+
+
+1. sudo apt install python3-pip
+2. pip install blogger-to-hugo => this will install the binaries to users local home folder so use the right path to invoke the utility
+3. <home folder>/.local/bin/blogger-to-hugo -h will give you the input parameters this tool takes
+4. <home folder>/.local/bin/blogger-to-hugo <path to xml file exported from blogger.com> <new folder path where migrated contents will be written>
+
+
+Most important this will also download the images
+
+
+
