@@ -5,8 +5,7 @@ published = 2012-11-25T00:56:00.002000-08:00
 author = "Pandurang Patil"
 tags = [ "Google", "Guice"]
 +++
-Following sample will demonstrate how to access guice dependency
-annotated with some annotation through direct Guice injector instance.  
+Following sample will demonstrate how to access guice dependency annotated with some annotation through direct Guice injector instance.  
   
 Bar.java  
   
