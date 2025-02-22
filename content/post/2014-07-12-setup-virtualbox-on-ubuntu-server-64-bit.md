@@ -13,7 +13,7 @@ Setup virtual box on ubuntu server `64bit` and use `phpvirtualbox` to access web
 
 Running `VirtualBox` and `phpvirtualbox` on the same machine.
 
-I mostly followed followed this blog http://santi-bassett.blogspot.in/2013/01/installing-virtualbox-on-ubuntu-server.html.
+I mostly followed this blog http://santi-bassett.blogspot.in/2013/01/installing-virtualbox-on-ubuntu-server.html.
 
 Except few changes. 
 
