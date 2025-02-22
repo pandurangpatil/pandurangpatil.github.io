@@ -5,29 +5,7 @@ published = 2013-11-15T05:06:00-08:00
 author = "Pandurang Patil"
 tags = [ "apiary", "documentation", "api"]
 +++
-<span
-style="font-family: &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif;">First
-of all I must mention apiary.io has done great job by providing some
-easy means to have REST api documentation, collaborate as well as expose
-it to public or keep it private. With the new release of the same I was
-struggling little bit to make use of the new version, for that I had to
-go through the detailed documentation
-([refer](http://apiary.io/blueprint)). But I felt this tutorial just
-demonstrates blueprint code, it doesn't show the corresponding preview
-related to given blueprint code. I had to invest some time to figure out
-what code generate which effect. So </span><span
-style="font-family: &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif;"><span
-style="font-family: &quot;Helvetica Neue&quot;, Arial, Helvetica, sans-serif;">I
-have created one sample blueprint for which you can refer the code below
-and result of the same <http://docs.pandurangpatil.apiary.io/>.
-</span>For more details refer api tutorial
-(<http://apiary.io/blueprint>), one can add more styling in
-documentation using [markdown](http://whatismarkdown.com/), for more
-help on markdown
-[refer](http://daringfireball.net/projects/markdown/syntax). </span>
-
-  
-
+First of all I must mention `apiary.io` has done great job by providing some easy means to have `REST` api documentation, collaborate as well as expose it to public or keep it private. With the new release of the same I was struggling little bit to make use of the new version, for that I had to go through the detailed documentation ([refer](http://apiary.io/blueprint)). But I felt this tutorial just demonstrates blueprint code, it doesn't show the corresponding preview related to given blueprint code. I had to invest some time to figure out what code generate which effect. So I have created one sample blueprint for which you can refer the code below and result of the same http://docs.pandurangpatil.apiary.io/. For more details [refer](http://apiary.io/blueprint) api tutorial , one can add more styling in documentation using [markdown](http://whatismarkdown.com/), for more help on markdown [refer](http://daringfireball.net/projects/markdown/syntax). 
   
 
      FORMAT: 1A  

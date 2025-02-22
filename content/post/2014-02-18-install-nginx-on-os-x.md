@@ -5,26 +5,11 @@ published = 2014-02-18T23:40:00-08:00
 author = "Pandurang Patil"
 tags = ["nginx", "osx"]
 +++
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span> <span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">One
-need to have gcc installed for that you need to install xcode along with
-command line tools. To install the same one can
-[refer](http://stackoverflow.com/questions/9329243/xcode-4-4-and-later-install-command-line-tools)
-to this link for xcode 5.0.1.</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span> <span
-style="font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;">Nginx
-requires PCRE – Perl Compatible Regular Expressions to build, I used
-PCRE version 8.33</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span> <span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif; font-size: large;">Install
-PCRE</span>  
-  
+One need to have `gcc` installed for that you need to install `xcode` along with command line tools. To install the same one can [refer](http://stackoverflow.com/questions/9329243/xcode-4-4-and-later-install-command-line-tools) to this link for xcode 5.0.1.
+
+`Nginx` requires `PCRE` – `Perl` Compatible Regular Expressions to build, I used `PCRE` version `8.33`
+
+Install `PCRE`
 
     $ mkdir source
     $ cd source
@@ -35,19 +20,10 @@ PCRE</span>
     $ make
     $ sudo make install
 
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif; font-size: large;">  
-</span> <span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif; font-size: large;">Install
-nginx</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span> <span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">Here
-I am considering stable version for installation.</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span>  
+
+Install `nginx`
+
+Here I am considering stable version for installation.
 
     $ cd ..
     $ curl -OL http://nginx.org/download/nginx-1.4.4.tar.gz
@@ -58,14 +34,7 @@ style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">
     $ make
     $ sudo make install
 
-<span
-style="font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: large;">  
-</span>  
-<span
-style="font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: large;">Output--</span>  
-<span
-style="font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: large;">  
-</span>  
+Output-- 
 
     nginx path prefix: "/usr/local/nginx"
     nginx binary file: "/usr/local/nginx/sbin/nginx"
@@ -81,30 +50,13 @@ style="font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif; font-size: l
     nginx http scgi temporary files: "scgi_temp"
 
   
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif; font-size: large;">Start
-/ Stop nginx</span>  
+`Start`/`Stop` `nginx`</span>  
   
-
     # Start
     $ sudo /usr/local/nginx/sbin/nginx 
 
     # Stop
     $ sudo /usr/local/nginx/sbin/nginx -s stop
 
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span> <span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">For
-more details on command line help refer
-(http://wiki.nginx.org/CommandLine)</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span> <span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">you
-can make your life easier to access ngnix from anywhere by adding nginx
-path (/usr/local/nginx/sbin) into PATH environment variable inside
-~/.profile file.</span>
+For more details on command line help [refer](http://wiki.nginx.org/CommandLine) you
+can make your life easier to access `ngnix` from anywhere by adding `nginx` path `/usr/local/nginx/sbin` into `PATH` environment variable inside `~/.profile` file.
