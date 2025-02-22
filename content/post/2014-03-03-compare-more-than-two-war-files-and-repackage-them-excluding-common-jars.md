@@ -1,28 +1,13 @@
 +++
-title = "compare more than two war files and repackage them excluding common jars"
+title = "Compare more than two war files and repackage them excluding common jars"
 slug = "2014-03-03-compare-more-than-two-war-files-and-repackage-them-excluding-common-jars"
 published = 2014-03-03T02:38:00-08:00
 author = "Pandurang Patil"
 tags = [ "java", "war",]
 +++
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">Some
-times you need to deploy more than one war files under same servlet
-container. In those war files there might have some common jars across
-them, which you want to deploy directly to servlet containers class
-path. So that container won't load those jars separately in the context
-of each war application. Which in turn will reduce the utilisation of
-permgen memory space. Following code snippet will help you to compare
-more than two war files, extract common shared libraries inside separate
-folder and repackage those wars excluding common jar files. This will
-generate two folders "shared" and "repackaged" inside given path where
-you have kept war files. "shared" folder will contain all extracted
-shared jar files and "repackaged" folder contains all war repackaged
-excluding shared jar files. </span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span>  
-
+Some times you need to deploy more than one `war` files under same `servlet` container. In those `war` files there might have some common `jars` across them, which you want to deploy directly to `servlet` containers class path. So that container won't load those `jars` separately in the context of each `war` application. Which in turn will reduce the utilisation of `permgen` memory space. Following code snippet will help you to compare more than two `war` files, extract common shared libraries inside separate
+folder and repackage those wars excluding common `jar` files. This will generate two folders `shared` and `repackaged` inside given path where you have kept `war` files. `shared` folder will contain all extracted shared `jar` files and `repackaged` folder contains all `war` repackaged excluding shared `jar` files.
+```
     import java.io.File;
     import java.io.FileFilter;
     import java.io.FileOutputStream;
@@ -197,7 +182,4 @@ style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">
       rp.process();
      }
     }
-
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span>
+```

@@ -16,10 +16,11 @@ To Open respective page pointed by hyperlink in new tab or window one need to ma
 | _top     | Opens the linked document in the full body of the window    |
 | framename  | pens the linked document in a named frame    |
 
-Sometimes you have to open a link inside new tab e.g. deep linked help pages on different pages of your application. But while doing that you don't want to annoy user by opening each link inside new tab. Instead you can open the link in new tab for very first time link, further links will be opened / displayed into same new tab created when user clicked on very first link. To achieve this you need to specify target as some unique string other than above mentioned values which starts with.
+Sometimes you have to open a link inside new tab e.g. deep linked help pages on different pages of your application. But while doing that you don't want to annoy user by opening each link inside new tab. Instead you can open the link in new tab for very first time link, further links will be `opened`/`displayed` into same new tab created when user clicked on very first link. To achieve this you need to specify target as some unique string other than above mentioned values which starts with.
 
+```
     <a target="help-tab" href="http://pandurangpatil.com/sample/help/firstchapter.html">First Help</a>
 
 
     <a target="help-tab" href="http://pandurangpatil.com/sample/help/secchapter.html">Second Help</a>
-
+```

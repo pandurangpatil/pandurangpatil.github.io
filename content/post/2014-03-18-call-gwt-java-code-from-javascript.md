@@ -5,26 +5,14 @@ published = 2014-03-18T07:14:00.002000-07:00
 author = "Pandurang Patil"
 tags = [ "GWT", "GoogleWebToolkit", "JavaScript", "JS"]
 +++
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">It is
-very easy to call javascript from GWT java code by making use of JSNI.
-But calling GWT java code from external java script of JSNI is little
-tricky and it becomes more complicate when you have to call instance
-method of a GWT java class. For more detail refer GWT official document
-([refer](http://www.gwtproject.org/doc/latest/DevGuideCodingBasicsJSNI.html))</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span> <span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">**Call
-static class method from JavaScript**</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span><span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">*GWTCode.java*</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span>  
+It is very easy to call `Aavascript` from `GWT` java code by making use of `JSNI`. But calling `GWT` java code from external `Javascript` of `JSNI` is little tricky and it becomes more complicate when you have to call instance method of a `GWT` java class. For more detail refer `GWT` official document
+([refer](http://www.gwtproject.org/doc/latest/DevGuideCodingBasicsJSNI.html))
 
+**Call static class method from JavaScript**
+
+*GWTCode.java*
+
+```
     package open.pandurang.client.view;
 
     /**
@@ -43,35 +31,20 @@ style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">
       };
      }-*/;
     }
+```
 
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span> <span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">At
-line 15 we are exposing this GWTCode.hello method and assign it to
-window.gwtcode\_hello. Please note there are two "( )" brackets, first
-one will declare parameter types and second will take actual parameters.
-Don't worry if you are using eclipse when you press CTRL + SPACE after
-method name it will populate corresponding type. Now from java script
-code you can call window.gwtcode\_hello("&lt;name&gt;")
-method. </span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span> <span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">NOTE:
-If method don't take any argument then line no 15 will look like "return
-@open.pandurang.client.view.GWTCode::hello()();"</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span><span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">Entry
-Point class </span> <span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-*Sample.java*</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span>  
+Refer this line `$wnd.gwtcode_hello = function(name) {` we are exposing this `GWTCode.hello` method and assign it to `window.gwtcode_hello`. 
 
+Refer line `return @open.pandurang.client.view.GWTCode::hello(Ljava/lang/String;)(name);` Please note there are two `( )` brackets, first one will declare parameter types `(Ljava/lang/String;)` and second will take actual parameters `(name)`. Don't worry if you are using eclipse when you press `CTRL + SPACE` after method name it will populate corresponding type. Now from `Javascript` code you can call `window.gwtcode_hello("<name>")` method.
+
+NOTE: If method don't take any argument then this line will look like `return
+@open.pandurang.client.view.GWTCode::hello()();`
+
+Entry Point class
+
+*Sample.java*
+
+```
     package open.pandurang.client.view;
 
     import com.google.gwt.core.client.EntryPoint;
@@ -87,24 +60,14 @@ style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">
      }
 
     }
+```
 
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span><span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">at
-line no 12 you will see we are calling exportMethod to export the
-GWTCode Hello method.</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span> <span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">html
-code</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">*sample.html*</span>  
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span>  
+In above sample you will see we are calling `GWTCode.exportMethod();` to export the `GWTCode.Hello` method.
 
+
+*sample.html*
+
+```
     <!doctype html>
     <html>
     <head>
@@ -131,12 +94,6 @@ style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">
         <button onclick="jsGwtCallTest();">test</button>
     </body>
     </html>
+```
 
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span><span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">we
-are calling this method on event of button click. You will not see any
-issues here but if you are calling this method from other .js file on
-some events like on page load or something. You need to make sure gwt
-entry point has been executed and exported the method.</span>
+we are calling this method on event of `button click`. You will not see any issues here but if you are calling this method from other `.js` file on some events like on page load or something. You need to make sure `gwt` entry point has been executed and exported the method.

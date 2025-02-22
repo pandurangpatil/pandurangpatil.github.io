@@ -1,33 +1,21 @@
 +++
-title = "gwt youtube player"
+title = "GWT youtube player"
 slug = "2014-03-23-gwt-youtube-player"
 published = 2014-03-23T02:01:00-07:00
 author = "Pandurang Patil"
 tags = [ "player", "youtube", "gwt", "GoogleWebToolkit",]
 +++
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">Created
-GWT wrapper over YouTube Iframe player api
-[refer](https://github.com/pandurangpatil/gwt-youtube)</span>  
+Created GWT wrapper over YouTube Iframe player api
+[refer](https://github.com/pandurangpatil/gwt-youtube)
 
 **Usage**
 ---------
 
-Inherit GWT
-module `<inherits name="open.pandurang.gwt.youtube.YouTube" />`
+Inherit `GWT` module `<inherits name="open.pandurang.gwt.youtube.YouTube" />`
 
-Before you start using YouTube iframe library one need to load them
-first, so as to load the library first you need make call
-to `YouTubePlayer.loadYouTubeIframeApi();`. This will ensure library is
-loaded, you can register to recieve event when library is loaded
-completely by using `ApiReadyEventHandler` for more details on the same
-refer YouTube documentation's [geting
-started](https://developers.google.com/youtube/iframe_api_reference#Requirements) section.
-This ApiReadyEvent is equivalent to `onYouTubeIframeAPIReady` javascript
-callback.
+Before you start using `YouTube` `iframe library` one need to load them first, so as to load the library first you need make call to `YouTubePlayer.loadYouTubeIframeApi();`. This will ensure library is loaded, you can register to recieve event when library is loaded completely by using `ApiReadyEventHandler` for more details on the same refer `YouTube` documentation [geting started](https://developers.google.com/youtube/iframe_api_reference#Requirements) section. This `ApiReadyEvent` is equivalent to  `onYouTubeIframeAPIReady` Javascript callback.
 
-  
-
+```
     // 3. This function creates an <iframe> (and YouTube player)
     //    after the API code downloads.
        var player;
@@ -107,29 +95,29 @@ iframe library well in advance before using YouTube Player.</span>
                 }
             });
         }
+```
 
-<span style="background-color: white;">  
-</span> <span style="background-color: white;">Fore more details
-refer [test sample
-project](https://github.com/pandurangpatil/gwt-youtube/tree/master/gwt-youtube-test)</span>  
-<span style="background-color: white;">  
+Fore more details refer [test sample project](https://github.com/pandurangpatil/gwt-youtube/tree/master/gwt-youtube-test)
 
 **Maven Dependency**
 
-            <dependency>
-                <groupId>open.pandurang.gwt</groupId>
-                <artifactId>gwt-youtube-player</artifactId>
-                <version>0.1</version>
-                <scope>provided</scope>
-            </dependency>
+```
+    <dependency>
+        <groupId>open.pandurang.gwt</groupId>
+        <artifactId>gwt-youtube-player</artifactId>
+        <version>0.1</version>
+        <scope>provided</scope>
+    </dependency>
+```
 
 **Maven Repository**  
 
-       <repositories>
-          <repository>
-             <id>Pandurang repo</id>
-             <url>https://github.com/pandurangpatil/pandurang-mvn-repo/raw/master/releases</url>
-          </repository>
-       </repositories>
-
+```
+    <repositories>
+      <repository>
+         <id>Pandurang repo</id>
+         <url>https://github.com/pandurangpatil/pandurang-mvn-repo/raw/master/releases</url>
+      </repository>
+    </repositories>
+```
 

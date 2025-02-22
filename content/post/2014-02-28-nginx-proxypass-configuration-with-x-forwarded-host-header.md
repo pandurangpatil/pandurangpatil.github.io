@@ -5,16 +5,9 @@ published = 2014-02-28T11:00:00.002000-08:00
 author = "Pandurang Patil"
 tags = ["nginx", "ReverseProxy"]
 +++
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">I
-have used and configured apache for proxy pass and proxy pass reverse
-multiple times with X-Forwarded-Host. I tried configuring same with
-nginx and it works out to be more customisable and easy one.</span>  
+I have used and configured `apache` for `proxy pass` and `proxy pass reverse` multiple times with `X-Forwarded-Host`. I tried configuring same with `nginx` and it works out to be more customisable and easy one.
 
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span>
-
+```
         server {
             listen       80;
             server_name  pandurangpatil.com;
@@ -26,7 +19,4 @@ style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">
             .
             .
         }
-
-<span
-style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">  
-</span>
+```

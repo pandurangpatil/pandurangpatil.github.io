@@ -3,7 +3,7 @@ title = "Jersey REST retrieve List of custom object"
 slug = "2014-02-21-jersey-rest-retrieve-list-of-custom-object"
 published = 2014-02-21T01:30:00.001000-08:00
 author = "Pandurang Patil"
-tags = ["jersey", "REST"]
+tags = ["java", "jersey", "REST"]
 +++
 It took me while to understand how one require to retrieve generic object
 from `ClientResponse`. I had an array of objects in Json format as a response of an `REST` api, which I was trying to `deserialize` it into `List<CustomObject>` refer below sample.  
