@@ -50,7 +50,7 @@ Output--
     nginx http scgi temporary files: "scgi_temp"
 
   
-`Start`/`Stop` `nginx`</span>  
+`Start`/`Stop` `nginx`
   
     # Start
     $ sudo /usr/local/nginx/sbin/nginx 
