@@ -1,2 +1,5 @@
-## Front Page Content
-`beautifulhugo` supports content on your front page. Edit `/content/_index.md` to change what appears here. Delete `/content/_index.md` if you don't want any content here.
+## Technologies
+
+I will mostly write about following
+
+`Java`, `J2EE`, `GWT(Google Web Toolkit)`, `HTML`, `Javascript`, `Linux`, `MacOS`, `Queue`, `Docker`, `Cloud hosting`, `Auto Scaling`, `Web`, `Ad Serving` etc. 
