@@ -14,7 +14,7 @@ pygmentsCodefencesGuessSyntax = true
 
 [Services]
   [Services.Disqus]
-    # Shortname = "XXX"
+    Shortname = "www-pandurangpatil-com"
   [Services.googleAnalytics]
     id = "G-QCZRVHQJVT"
 
