@@ -33,4 +33,4 @@ As a distinguished engineering leader, I bring a unique combination of technolog
 - **Infra Cost Optimization:-** Reduced infrastructure costs by code optimization, devops, alerting, distributed architecture, autoscaling, ECS cluster with Fargate, easy dev setup with Docker, using CDN, using ARM processors, right-sizing, & auto shutdown of unused instances. Improved infra cost by 30% for Gromor, by 60% for cARscan, by 20% for YuktaMedia, and by 25% for Privado
 
 
-Download complete resume - [click here]([https://drive.google.com/file/d/1qeoQU7D8XbX_zgsdNGNBctmfP4AgZtg7/view?usp=sharing](https://drive.google.com/file/d/1thRoPd9OgeXbA_KKjdZLxRn9U6SJlDMl/view?usp=sharing))
+Download complete resume - [click here](https://drive.google.com/file/d/1thRoPd9OgeXbA_KKjdZLxRn9U6SJlDMl/view?usp=sharing)
